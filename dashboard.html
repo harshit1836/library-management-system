@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2 class="logo">📚 Library</h2>
+        <ul>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="books.html">Browse Books</a></li>
+            <li><a href="mybooks.html">My Books</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+
+        <div class="topbar">
+            <h1>Dashboard</h1>
+            <div class="user-info">
+                <span>Welcome, User 👋</span>
+            </div>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Books</h3>
+                <p id="totalBooks">250</p>
+            </div>
+
+            <div class="card">
+                <h3>Books Issued</h3>
+                <p id="issuedBooks">3</p>
+            </div>
+
+            <div class="card">
+                <h3>Due Books</h3>
+                <p id="dueBooks">1</p>
+            </div>
+
+            <div class="card">
+                <h3>Fines</h3>
+                <p id="fineAmount">₹50</p>
+            </div>
+
+        </div>
+
+        <div class="quick-actions">
+            <h2>Quick Actions</h2>
+
+            <div class="action-buttons">
+                <a href="books.html" class="btn">Browse Books</a>
+                <a href="mybooks.html" class="btn">My Issued Books</a>
+                <a href="books.html" class="btn">Search Books</a>
+            </div>
+        </div>
+        <div class="recent-activity">
+            <h2>Recent Activity</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Issue Date</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data Structures</td>
+                        <td>01 Feb 2026</td>
+                        <td>15 Feb 2026</td>
+                        <td>Returned</td>
+                    </tr>
+                    <tr>
+                        <td>Operating Systems</td>
+                        <td>05 Feb 2026</td>
+                        <td>20 Feb 2026</td>
+                        <td>Due</td>
+                    </tr>
+                    <tr>
+                        <td>Database Management</td>
+                        <td>10 Feb 2026</td>
+                        <td>25 Feb 2026</td>
+                        <td>Issued</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
